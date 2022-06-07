@@ -9,8 +9,8 @@
 body{
 	background-image: url("../img/background.png");
 	font-family: 'Courgette', cursive;
-    width: auto;
 	margin:0;
+	width: auto;
 }
 #conteneur{
 	margin: 0 auto;
@@ -61,18 +61,22 @@ header li{
 section h2{
 	font-size: 33px;
 	padding-top:71px;
-	margin-left:158px;
+	margin : 0 auto;
 	color:#C55394;
 }
 .titre{
 	float:left;
 }
 .arc {
-	width: 600px;
+	display: block;
+	text-align: center;
+	width: 100%;
 	height:150px;
-	background-image:url("../img/rainbow.png") ;
-	margin-left:660px;
-	margin-top:29px;
+	background-image:url("../img/rainbow.png");
+	background-size: 27%;
+	background-position: center top 10px;
+	
+	background-repeat: no-repeat;
 }
 section h3{
 	display: inline;
@@ -183,11 +187,9 @@ footer{
 
 @media (max-width: 1260px) {
 	.arc {
-        width: 600px;
         height:150px;
         background-image:url("../img/rainbow.png") ;
-        margin-left:250px;
-        margin-top:29px;
+       
     }
 
     #conteneur {
@@ -204,11 +206,9 @@ footer{
 @media (max-width: 750px) {	
 	
     .arc {
-        width: 600px;
         height:150px;
         background-image:url("../img/rainbow.png") ;
-        margin-left:80px;
-        margin-top:29px;
+        
     }
     .carte {
         display: flex;
